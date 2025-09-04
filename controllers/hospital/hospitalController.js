@@ -15,7 +15,8 @@ exports.getHospitals = async (req, res) => {
 // GET hospital by ID
 exports.getHospitalById = async (req, res) => {
   const id = parseInt(req.params.id);
-  try {
+  console.log("nawa message hai")
+  try {g
     const hospital = await hospitalService.getHospitalById(id);
     if (!hospital) return res.status(404).json({ message: 'Hospital not found' });
     res.status(200).json(hospital);
