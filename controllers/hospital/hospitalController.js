@@ -45,6 +45,7 @@ exports.createHospital = async (req, res) => {
 // DELETE hospital
 exports.deleteHospital = async (req, res) => {
   const id = parseInt(req.params.id);
+  console.log('Hi welcome');
   try {
     const hospital = await hospitalService.deleteHospital(id);
     if (!hospital) return res.status(404).json({ message: 'Hospital not found' });
