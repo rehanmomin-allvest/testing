@@ -16,7 +16,7 @@ exports.getHospitals = async (req, res) => {
 exports.getHospitalById = async (req, res) => {
   const id = parseInt(req.params.id);
   console.log("nawa message hai")
-  try {g
+  try {
     const hospital = await hospitalService.getHospitalById(id);
     if (!hospital) return res.status(404).json({ message: 'Hospital not found' });
     res.status(200).json(hospital);
@@ -56,3 +56,6 @@ exports.deleteHospital = async (req, res) => {
     res.status(500).json({ error: 'Database error' });
   }
 };
+
+
+console.log("this is controller")
