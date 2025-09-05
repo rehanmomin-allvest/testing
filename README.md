@@ -1,5 +1,3 @@
-# Hospital
-this repo contains the details of HOSPITAL{CRUD}
-# testing
 
 
+testing or pratice
